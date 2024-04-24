@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   }
+   
+   .header{
+       position: fixed;
+       top: 0;
+       left: 0;
+       width: 100%;
+       padding: 20px 10%;
+       background-color: transparent;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       z-index: 100;
+   }
+   
+   .logo{
+       font-size: 25px;
+       color: #fff;
+       text-decoration: none;
+       font-weight: 600;
+       pointer-events: none;
+   }
+   
+   .navbar a{
+       font-size: 18px;
+       color: #fff;
+       text-decoration: none;
+       font-weight: 500;
+       margin-left: 35px;
+   }
+   
+   .navbar a.active,
+   .navbar a:hover{
+        background: linear-gradient(45deg, #f06, #3cf);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+   }
+   
+   .home{
+       width: 100%;
+       height: 100vh;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding:70px 10% 0;
+   
+   }
+   
+   .home-content{
+       max-width: 500px;
+   }
+   
+   .home-content h1{
+       font-size: 56px;
+       font-weight: 700;
+       line-height: 1.2;
+       width: 130%;
+   }
+   
+   .home-content h3{
+       font-size: 32px;
+       font-weight: 700;
+   }
+   
+   .home-content p{
+       font-size: 25px;
+       margin: 20px 0 40px;
+       font-family: serif;
+       line-height: 120%;
+   
+   }
+   
+   .btn{
+       display: inline-flex;
+       justify-content: center;
+       align-items: center;
+       width: 180px;
+       height: 48px;
+       background: yellowgreen;
+       border-radius: 40px;
+       font-size: 22px;
+       color: #fff;
+       text-decoration: none;
+       font-weight: 600;
+       letter-spacing: 1px;
+       z-index: 1;
+       background: linear-gradient(45deg,#f06,#3cf,#f06);
+   }
+   
+   
+   body{
+       background-color: #0c1022;
+       color: #fff;
+   }
+   
+   .home-sci a{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       text-decoration: none;
+       width: 40px;
+       height: 40px;
+       background: linear-gradient(45deg,#f06,#3cf);
+       border-radius: 50%;
+       color: #fff;
+       margin: 20px 0;
+   }
+   
+   @keyframes glow{
+       0%{
+           background: linear-gradient(45deg,#3cf,#f06,#3cf);
+       }
+       50%{
+           background: linear-gradient(45deg, violet,green);
+       }
+       100%{
+           background: linear-gradient(45deg, #f06,#3cf);
+       }
+   }
+   
+   .home-img{
+       width: 410px;
+       height: 410px;
+       background: linear-gradient(45deg,#3cf,#f06,#3cf);
+       border-radius: 50%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       animation: glow 3s ease-in infinite;
+   }
+   
+   .glowing-circle{
+       width: 90%;
+       height: 90%;
+      
+       border-radius: 50%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       background-image:url(" https://static.vecteezy.com/system/resources/previews/011/490/381/original/happy-smiling-young-man-avatar-3d-portrait-of-a-man-cartoon-character-people-illustration-isolated-on-white-background-vector.jpg");
+       /* background-size: contain; 
+       background-repeat: no-repeat; */
+       background-size: cover;
+   }
+   i{
+    transform: scale(1.5);
+    background: linear-gradient(45deg,#3cf,#f06);
+    border-radius: 50%;
+    display: inline-block;
+   }
+   footer{
+    color: bisque;
+    text-align: center;
+    transform: scale(1.3);
+
+   }
